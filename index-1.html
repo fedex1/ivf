@@ -1,0 +1,665 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="layout.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Century_Gothic_400.font.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+
+<link href="tomsform.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="ivfpredict.js"></script>
+
+
+<!--[if lt IE 7]>
+  <script type="text/javascript" src="js/ie_png.js"></script>
+  <script type="text/javascript">
+  ie_png.fix('.png, #header, #content, #footer');
+  </script>
+  <link href="ie.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+<body id="page5">
+<div id="main">
+  <!-- header -->
+  <div id="header">
+    <div id="menu">
+      <ul>
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="index-1.html"><span>Calculator</span></a></li>
+        <li><a href="index-2.html"><span>About us</span></a></li>
+        <li><a href="index-3.html"><span>Publications</span></a></li>
+        <li class="act"><a href="index-4.html"><span>Contact us</span></a></li>
+      </ul>
+    </div>
+    <a href="index.html"><img src="images/logo.gif" id="logo" alt="" /></a> <a href="http://www.twitter.com/ivfpredict" target="_new" id="twitter">twitter</a>
+    <div id="header-box"> <img src="images/slogan.gif" alt="" />
+      <p>HELP US IMPROVE OUR ONLINE CALCULATOR</p>
+    </div>
+  </div>
+  <!-- content -->
+  <div id="content">
+    <div id="indent-2">
+      <div class="wrapper-1">
+        <div id="column-left">
+          <div class="indent-1">
+            <h2>Using the Calculator</h2>
+            <div class="indent-left-1">
+              <dl class="list-4">
+                <dt>Entering information</dt>
+                <dd>For each of the nine steps, you choose the option that matches the IVF situation you have in mind. This could either be your current situation, or a hypothetical situation. For some of the steps, you will need some clinical information, such as causes of infertility or proposed medication. After the nine steps, there is a summary page that lists the choices you made, together with the calculated percentage chance of a live birth for an IVF cycle.</dd>
+                <dt>Re-calculating</dt>
+                <dd>From the summary page you can modify choices (for example - choosing a different age, or selecting donor eggs instead of own eggs, or changing the medication). Any changes in the calculated percentage will be displayed immediately.</dd>
+                <dt>Warnings</dt>
+                <dd>
+                
+                  <p>Using the back button or refresh button on your browser can lead to calculations being displayed that are based on choices not shown in the summary. If you think that you may have made an incorrect choice, the safest option is to return to the main page and start again. If you are on the summary page, there is a reset button that allows you to start from scratch.</p>
+                  <p>You should ensure that you have made consistent choices for steps 5 through 7. For example, if this is the first IVF cycle (option 1 for step 5), then you should choose zero as the number of unsuccessful IVF attempts in the past (step 6), and you should choose one of the "no previous IVF" options for step 7.
+</dd>
+                <dt>&nbsp;</dt>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div id="column-right">
+          <div class="indent-left">
+            <h2>Online Calculator</h2>
+            <div class="wrapper">
+<div id='calc01'>
+<p>
+To calculate your personalised prediction of the chance of having a live birth 
+with your next IVF cycle please follow the instructions on each page and select 
+the correct option for you. 
+</p>
+<p>
+At the end you will see a summary page where you will be able to change your 
+answers and recalculate your personalised prediction.
+</p>
+<form name='ageform' action='javascript: void(0)'>
+<fieldset>
+<legend><span>Step 1 of 9 - Age
+</span></legend>
+
+<ol>  
+<li> 
+<label for="eggs">Please select the woman's age:</label> 
+<select name="age" size="1" onChange="agecheck()">
+<option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+ <option value="0">18</option> 
+ <option value="0">19</option> 
+  <option value="0">20</option> 
+   <option value="0">21</option> 
+    <option value="0">22</option> 
+	 <option value="0">23</option> 
+	  <option value="0">24</option> 
+	   <option value="0">25</option> 
+	    <option value="0">26</option> 
+		 <option value="0">27</option> 
+		  <option value="0">28</option> 
+		   <option value="0">29</option> 
+		    <option value="0">30</option> 
+			 <option value="0">31</option> 
+			  <option value="0">32</option> 
+			   <option value="0">33</option> 
+			    <option value="0">34</option> 
+ <option value="1">35</option>
+  <option value="1">36</option>
+   <option value="1">37</option>
+ <option value="2">38</option>
+  <option value="2">39</option> 
+ <option value="3">40</option>
+  <option value="3">41</option>
+   <option value="3">42</option>
+  <option value="4">43</option> 
+   <option value="4">44</option> 
+ <option value="5">45</option>
+  <option value="5">46</option>
+   <option value="5">47</option>
+    <option value="5">48</option>
+	 <option value="5">49</option>
+	  <option value="5">50</option>
+  </select> 
+</li>  
+</ol> 
+</fieldset>
+</form>
+<p>
+<a id='trybox' href='javascript:showcalc02()'>Go to the next step</a>
+</p>
+<p>
+<a id='summarybox' href='javascript:showsummary()'>Go to the summary page</a>
+</p>
+<p>
+<a href="http://ivfpredict.com/index.html">Return to the main page</a>
+</p>
+<hr />
+<p><span>IVFpredict &copy; 2011</span> | <a href="index-5.html">Privacy policy</a></p>
+</div>
+
+<div id='calc02' style = 'display:none'>
+<form name='durform' action='javascript: void(0)'>
+<fieldset>
+<legend><span>Step 2 of 9 - Years trying
+</span></legend>
+<ol>  
+<li> 
+<label for="eggs">For how many years have you been trying to get pregnant?</label> 
+<select name="dur" size="1" onChange="trycheck()">
+<option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+ <option value="0">Less than 1 year</option> 
+ <option value="1">1 year</option>
+  <option value="1">2 years</option>
+   <option value="1">3 years</option>
+ <option value="2">4 years</option> 
+  <option value="2">5 years</option> 
+   <option value="2">6 years</option> 
+ <option value="3">7 years</option>
+  <option value="3">8 years</option>
+   <option value="3">9 years</option>
+  <option value="4">10 years</option> 
+    <option value="4">11 years</option> 
+	  <option value="4">12 years</option> 
+ <option value="5">More than 12 years</option>
+  </select>
+  </li>  
+</ol> 
+</fieldset>
+</form>
+<p>
+<a id='eggbox' href='javascript:showcalc03()'>Go to the next step</a>
+</p>
+<p>
+<a id='summarybox' href='javascript:showsummary()'>Go to the summary page</a>
+</p>
+<p>
+<a href="http://ivfpredict.com/index.html">Return to the main page</a>
+</p>
+<hr />
+<p><span>IVFpredict &copy; 2011</span> | <a href="index-5.html">Privacy policy</a></p>
+</div>
+
+<div id='calc03' style = 'display:none'>
+<form name='srcform' action='javascript: void(0)'>
+<fieldset>
+<legend><span>Step 3 of 9 - Source of eggs
+</span></legend>
+<ol>  
+<li> 
+<label for="eggs">Are you intending to use your own eggs or donor eggs? </label> 
+ <select name="src" size="1" onChange="srccheck()">
+<option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+ <option value="1">Own eggs</option> 
+ <option value="0">Donor eggs</option>
+ </select>
+   </li>  
+</ol> 
+</fieldset>
+</form>
+ </form>
+<p>
+<a id='causebox' href='javascript:showcalc04()'>Go to the next step</a>
+</p>
+<p>
+<a id='summarybox' href='javascript:showsummary()'>Go to the summary page</a>
+</p>
+<p>
+<a href="http://ivfpredict.com/index.html">Return to the main page</a>
+</p>
+<hr />
+<p><span>IVFpredict &copy; 2011</span> | <a href="index-5.html">Privacy policy</a></p>
+</div>
+
+<div id='calc04' style = 'display:none'>
+<p>
+What has your doctor told you is the cause of your infertility? 
+</p>
+<p>
+This can be either:
+</p>
+<ul>
+<li>Unknown</li>
+<li>Low sperm count</li>
+<li>Damaged tubes</li>
+<li>Not ovulating regularly</li>
+<li>Endometriosis</li>
+<li>Cervical</li>
+<li>Or more than one of the above causes</li>
+</ul>
+
+<p>
+<form name='causeform' action='javascript:void(0)'>
+<fieldset>
+<legend><span>Step 4 of 9 - Cause
+</span></legend>
+<ol>  
+<li> 
+<label for="eggs">Which option applies to you?</label> 
+ <select name="cause" size="1" onChange="causecheck()">
+<option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+ <option value="0">Unknown</option> 
+ <option value="1">Damaged tubes</option>
+ <option value="2">Irregular ovulation</option> 
+ <option value="3">Endometriosis</option>
+  <option value="4">Cervical</option> 
+ <option value="5">Low sperm count</option>
+  <option value="6">More than one cause</option>
+ </select>
+    </li>  
+</ol> 
+</fieldset>
+  </form>
+ </p>
+
+<p>
+<a id='attsbox' href='javascript:showcalc05()'>Go to the next step</a>
+</p>
+<p>
+<a id='summarybox' href='javascript:showsummary()'>Go to the summary page</a>
+</p>
+<p>
+<a href="http://ivfpredict.com/index.html">Return to the main page</a>
+</p>
+<hr />
+<p><span>IVFpredict &copy; 2011</span> | <a href="index-5.html">Privacy policy</a></p>
+</div>
+
+<div id='calc05' style = 'display:none'>
+ 
+<p>
+<form name='cycform' action='javascript:void(0)'>
+<fieldset>
+<legend><span>Step 5 of 9 - Attempts at IVF
+</span></legend>
+<ol>  
+<li> 
+<label for="eggs">Is this your first, second or third or more attempt at IVF? </label> 
+ <select name="cyc" size="1" onChange="cyccheck()">
+ <option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+ <option value="0">First</option> 
+ <option value="1">Second</option>
+ <option value="2">Third or more</option>  
+ </select>
+    </li>  
+</ol> 
+</fieldset>
+ </form>
+ </p>
+
+<p>
+<a id='attsbox' href='javascript:showcalc06()'>Go to the next step</a>
+</p>
+<p>
+<a id='summarybox' href='javascript:showsummary()'>Go to the summary page</a>
+</p>
+<p>
+<a href="http://ivfpredict.com/index.html">Return to the main page</a>
+</p>
+<hr />
+<p><span>IVFpredict &copy; 2011</span> | <a href="index-5.html">Privacy policy</a></p>
+</div>
+
+<div id='calc06' style = 'display:none'>
+<p>
+<form name='attsform' action='javascript:void(0)'>
+<fieldset>
+<legend><span>Step 6 of 9 - Previous attempts at IVF
+</span></legend>
+<ol>  
+<li> 
+<label for="eggs">How many unsuccessful attempts at IVF have you had? ("Unsuccessful" means that there was no live birth, even if there was a pregnancy.)</label> 
+ <select name="atts" size="1" onChange="attscheck()">
+ <option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+ <option value="0">Zero</option> 
+ <option value="1">One</option>
+ <option value="2">Two</option> 
+ <option value="3">Three</option>
+  <option value="4">Four</option> 
+ <option value="5">Five or more</option> 
+ </select>
+     </li>  
+</ol> 
+</fieldset>
+ </form>
+ </p>
+<p>
+<a id='attsbox' href='javascript:showcalc07()'>Go to the next step</a>
+</p>
+<p>
+<a id='summarybox' href='javascript:showsummary()'>Go to the summary page</a>
+</p>
+<p>
+<a href="http://ivfpredict.com/index.html">Return to the main page</a>
+</p>
+<hr />
+<p><span>IVFpredict &copy; 2011</span> | <a href="index-5.html">Privacy policy</a></p>
+</div>
+
+
+<div id='calc07' style = 'display:none'>
+<p>
+Which of the following options applies to you?
+<ol>
+  <li>Have never been pregnant</li>
+  <li>Have been pregnant without IVF, but didn't have a live birth</li>
+  <li>Have had a live birth without IVF</li>
+  <li>Have had IVF in the past, but didn't become pregnant</li>
+  <li>Have had IVF in the past, became pregnant but didn't have a live birth</li>
+  <li>Have had IVF in the past, and had a live birth</li>
+</ol> 
+</p>
+<p>
+<form name='histform' action='javascript: void(0)'>
+<fieldset>
+<legend><span>Step 7 of 9 - History
+</span></legend>
+<ol>  
+<li> 
+<label for="eggs">Which option applies to you?</label> 
+ <select name="hist" size="1" onChange="histcheck()">
+ <option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+   <option value="0">No IVF, no pregnancy</option> 
+ <option value="1">No IVF, pregnant only</option>
+  <option value="2">No IVF, live birth</option> 
+ <option value="3">IVF, no pregnancy</option> 
+ <option value="4">IVF, pregnant only</option>
+  <option value="5">IVF, live birth</option> 
+ </select>
+      </li>  
+</ol> 
+</fieldset>
+ </form>
+ </p>
+ 
+<p>
+<a id='attsbox' href='javascript:showcalc08()'>Go to the next step</a>
+</p>
+<p>
+<a id='summarybox' href='javascript:showsummary()'>Go to the summary page</a>
+</p>
+<p>
+<a href="http://ivfpredict.com/index.html">Return to the main page</a>
+</p>
+<hr />
+<p><span>IVFpredict &copy; 2011</span> | <a href="index-5.html">Privacy policy</a></p>
+</div>
+
+<div id='calc08' style = 'display:none'>
+<p>
+<form name='prepform' action='javascript: void(0)'>
+<fieldset>
+<legend><span>Step 8 of 9 - Medication
+</span></legend>
+<ol>  
+<li> 
+<label for="eggs">Which medication are you going to be using?  (Gonadotrophins are usual if you are using your own eggs and HRT is normal if you are using donor eggs.)</label> 
+ <select name="prep" size="1" onChange="prepcheck()">
+<option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+ <option value="0">Antioestrogen</option> 
+ <option value="1">Gonadotrophin</option>
+ <option value="2">Hormone replacement</option> 
+ </select>
+       </li>  
+</ol> 
+</fieldset>
+ </form>
+ </p>
+<p>
+<a id='attsbox' href='javascript:showcalc09()'>Go to the next step</a>
+</p>
+<p>
+<a id='summarybox' href='javascript:showsummary()'>Go to the summary page</a>
+</p>
+<p>
+<a href="http://ivfpredict.com/index.html">Return to the main page</a>
+</p>
+<hr />
+<p><span>IVFpredict &copy; 2011</span> | <a href="index-5.html">Privacy policy</a></p>
+</div>
+
+<div id='calc09' style = 'display:none'>
+<form name='icsiform' action='javascript: void(0)'>
+<fieldset>
+<legend><span>Step 9 of 9 - ICSI
+</span></legend>
+<ol>  
+<li> 
+<label for="eggs">Has your doctor recommended Intracytoplasmic Sperm Injection (ICSI)? This is normally used if you have a low sperm count or poor sperm motility.</label> 
+ <select name="icsi" size="1" onChange="icsicheck()">
+ <option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+ <option value="0">No</option> 
+ <option value="1">Yes</option>
+ </select>
+        </li>  
+</ol> 
+</fieldset>
+ </form>
+ </p>
+<p>
+<a id='summarybox' href='javascript:showsummary()'>Go to the summary page</a>
+</p>
+<p>
+<a href="http://ivfpredict.com/index.html">Return to the main page</a>
+</p>
+<hr />
+<p><span>IVFpredict &copy; 2011</span> | <a href="index-5.html">Privacy policy</a></p>
+</div>
+
+<div id='summary' style = 'display:none'>
+<form name='thesecondform' action='javascript: void(0)'>
+<fieldset>  
+<legend><span>IVFpredict.com Information Summary</span></legend>
+<ol>  
+<li> 
+<label for="age">Woman's age:</label> 
+<select name="sumage" size="1" onChange="calculate('Some')" >
+<option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+ <option value="0">18</option> 
+ <option value="0">19</option> 
+  <option value="0">20</option> 
+   <option value="0">21</option> 
+    <option value="0">22</option> 
+	 <option value="0">23</option> 
+	  <option value="0">24</option> 
+	   <option value="0">25</option> 
+	    <option value="0">26</option> 
+		 <option value="0">27</option> 
+		  <option value="0">28</option> 
+		   <option value="0">29</option> 
+		    <option value="0">30</option> 
+			 <option value="0">31</option> 
+			  <option value="0">32</option> 
+			   <option value="0">33</option> 
+			    <option value="0">34</option> 
+ <option value="1">35</option>
+  <option value="1">36</option>
+   <option value="1">37</option>
+ <option value="2">38</option>
+  <option value="2">39</option> 
+ <option value="3">40</option>
+  <option value="3">41</option>
+   <option value="3">42</option>
+  <option value="4">43</option> 
+   <option value="4">44</option> 
+ <option value="5">45</option>
+  <option value="5">46</option>
+   <option value="5">47</option>
+    <option value="5">48</option>
+	 <option value="5">49</option>
+	  <option value="5">50</option>
+  </select>
+</li>  
+<li>  
+<label for="try">Trying for:</label>
+<select name="sumdur" size="1"  onChange="calculate('Some')" >
+<option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+ <option value="0">Less than 1 year</option> 
+ <option value="1">1 year</option>
+  <option value="1">2 years</option>
+   <option value="1">3 years</option>
+ <option value="2">4 years</option> 
+  <option value="2">5 years</option> 
+   <option value="2">6 years</option> 
+ <option value="3">7 years</option>
+  <option value="3">8 years</option>
+   <option value="3">9 years</option>
+  <option value="4">10 years</option> 
+    <option value="4">11 years</option> 
+	  <option value="4">12 years</option> 
+ <option value="5">More than 12 years</option>
+  </select></li>  
+<li> 
+  
+<label for="eggs">Own or donor eggs?</label> 
+<select name="sumsrc" size="1" onChange="calculate('Some')" >
+<option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+ <option value="1">Own eggs</option> 
+ <option value="0">Donor eggs</option>
+ </select></li>  
+<li>  
+  
+
+<label for="cause">Cause:</label> 
+<select name="sumcause" size="1" onChange="calculate('Some')" >
+<option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+ <option value="0">Unknown</option> 
+ <option value="1">Damaged tubes</option>
+ <option value="2">Irregular ovulation</option> 
+ <option value="3">Endometriosis</option>
+  <option value="4">Cervical</option> 
+ <option value="5">Low sperm count</option>
+  <option value="6">More than one cause</option>
+ </select></li>  
+<li> 
+
+
+<label for="attempts">IVF attempts:</label>
+<select name="sumcyc" size="1" onChange="calculate('Some')" >
+<option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+ <option value="0">First</option> 
+ <option value="1">Second</option>
+ <option value="2">Third or more</option> 
+ </select></li>  
+<li> 
+
+<label for="unsucc">Unsuccessful IVF attempts:</label>
+<select name="sumatts" size="1" onChange="calculate('Some')" >
+<option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+ <option value="0">Zero</option> 
+ <option value="1">One</option>
+ <option value="2">Two</option> 
+ <option value="3">Three</option>
+  <option value="4">Four</option> 
+ <option value="5">Five or more</option>
+ </select></li>  
+<li> 
+ 
+<label for="history">Pregnancy history:</label> 
+<select name="sumhist" size="1" onChange="calculate('Some')" >
+<option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+   <option value="0">No IVF, no pregnancy</option> 
+ <option value="1">No IVF, pregnant only</option>
+  <option value="2">No IVF, live birth</option> 
+ <option value="3">IVF, no pregnancy</option> 
+ <option value="4">IVF, pregnant only</option>
+  <option value="5">IVF, live birth</option> 
+ </select></li>  
+<li> 
+ 
+ 
+<label for="meds">Medication:</label>
+<select name="sumprep" size="1" onChange="calculate('Some')" >
+<option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+ <option value="0">Antioestrogen</option> 
+ <option value="1">Gonadotrophin</option>
+ <option value="2">Hormone replacement</option> 
+ </select></li>  
+<li> 
+
+<label for="icsi">Will ICSI be used?</label> 
+<select name="sumicsi" size="1" onChange="calculate('All')">
+<option value="-1">Please Choose</option>
+ <option value="-1">-----------------</option>
+ <option value="0">No</option> 
+ <option value="1">Yes</option>
+ </select></li>  
+</fieldset>
+
+<fieldset class="reset"> 
+<input type="button" value="Reset and start again" onClick="this.form.reset()" /> 
+</fieldset>
+
+<fieldset>
+<legend><span>Your chance of a live birth per IVF attempt is:
+</span></legend>
+<ol>  
+<li> 
+<label for="chance"><span style="color:#F2EFE9;">text here</span> </label> 
+<input  name='prob' />
+</li>  
+</ol> 
+</fieldset>
+
+
+
+</form>
+<p>
+<a href="http://ivfpredict.com/index.html">Return to the main page</a>
+</p>
+<p>
+Please note: using the refresh and back buttons in your browser may result in calculations being performed based on choices that aren't currently displayed.
+</p>
+<p>
+If you think you may have made an incorrect choice, please either use the reset button, or return to the main page and start making your choices again.
+</p>
+<hr />
+<p><span>IVFpredict &copy; 2011</span> | <a href="index-5.html">Privacy policy</a></p>
+</div>
+            </div>
+          </div>
+          <!--
+          <div class="line-hor"></div>
+          <div class="indent-left">
+            <h2><em>Contact Us</em></h2>
+            <h5>We would be delighted to hear from you so that we can continue to improve the useability of our calculator and apps.</h5>
+            <p>We will not be able to comment on any individual case or patient history. Should you wish to have a medical consultation please contact <a href="http://www.gcrm.co.uk" target="_new">GCRM.co.uk</a> or <a href="http://www.grmu.co.uk" target="_new">GRMU.co.uk</a>. </p>
+          </div>
+          -->
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div id="footer">
+    <div class="inner">
+      <div class="wrapper"> <strong>
+        <!-- {%FOOTER_LINK} -->
+        </strong>
+        <p><span>IVFpredict&copy; 2011 - 2013</span> | <a href="index-5.html">Privacy policy</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
