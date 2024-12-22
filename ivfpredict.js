@@ -1,5 +1,21 @@
  //<script type="text/javascript">
 // Calculation and sub-page selection scripts go here
+function getprobability(
+	           a1 , a2 , a3 , a4 , a5 , a6 , a7
+){
+
+	          const yup = a1 + a2 + a3 + a4 + a5 + a6 + a7
+	    
+			  let y = -1.1774;
+	   
+		      y = y + yup;
+ 		
+              let prob = (100 * Math.exp(y))/(1 + Math.exp(y));
+	   
+		      prob = Math.round(prob * 10) / 10;
+              return prob
+}
+
 function buildinput(name,t1) {
    const myObject = {};
    const values=findAllElements(t1)
@@ -259,6 +275,15 @@ const cartesian = (a, b, ...c) => (b ? cartesian(f(a, b), ...c) : a);
 // stack overflow
 // console.log(cartesian(rawt1.t1,rawt2.t2,rawt3.t3,rawt4.t4,rawt5.t5,rawt6.t6,rawt7.t7).length);
 
+console.error(`length ${
+rawt1.t1.length*
+rawt2.t2.length*
+rawt3.t3.length*
+rawt4.t4.length*
+rawt5.t5.length*
+rawt6.t6.length*
+rawt7.t7.length}`)
+
 for(let a1 of rawt1.t1)
 for(let a2 of rawt2.t2)
 for(let a3 of rawt3.t3)
@@ -267,8 +292,11 @@ for(let a5 of rawt5.t5)
 for(let a6 of rawt6.t6)
 for(let a7 of rawt7.t7)
 {
+const probability=getprobability(
+	           a1 , a2 , a3 , a4 , a5 , a6 , a7
+               )
     console.log(JSON.stringify({
-    a1:a1,a2:a2,a3:a3,
+    probability:probability,a1:a1,a2:a2,a3:a3,
     a4:a4,a5:a5,a6:a6,a7:a7}))
     // console.log()
 }
