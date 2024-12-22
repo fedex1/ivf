@@ -254,13 +254,13 @@ function calculate(known) {
 	   
 	var t7 = [0.0,0.29,0.4458]
 
-console.log(buildinput("t1",t1))
-console.log(buildinput("t2",t2))
-console.log(buildinput("t3",t3))
-console.log(buildinput("t4",t4))
-console.log(buildinput("t5",t5))
-console.log(buildinput("t6",t6))
-console.log(buildinput("t7",t7))
+console.error(buildinput("t1",t1))
+console.error(buildinput("t2",t2))
+console.error(buildinput("t3",t3))
+console.error(buildinput("t4",t4))
+console.error(buildinput("t5",t5))
+console.error(buildinput("t6",t6))
+console.error(buildinput("t7",t7))
 
 const rawt1=(buildinput("t1",t1))
 const rawt2=(buildinput("t2",t2))
